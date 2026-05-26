@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bridgepoint — Web Design for Service & Industrial Businesses</title>
+    <meta name="description" content="Bridgepoint helps service businesses, contractors, and industrial companies build professional websites that improve credibility, visibility, and customer trust." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Bridgepoint — Web Design for Service & Industrial Businesses" />
+    <meta property="og:description" content="Modern websites for businesses that mean business." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Serif:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script>
+      (function() {
+        var t = localStorage.getItem('bp-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+  </head>
+  <body>
+
+    <!-- ============================================================
+         NAVIGATION
+    ============================================================ -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-container">
+        <a href="#home" class="logo" data-page="home">
+          <span class="logo-mark">B</span>
+          <span class="logo-text">Bridgepoint</span>
+        </a>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="#home" data-page="home" class="nav-link active">Home</a>
+          <a href="#services" data-page="services" class="nav-link">Services</a>
+          <a href="#portfolio" data-page="portfolio" class="nav-link">Portfolio</a>
+          <a href="#faq" data-page="faq" class="nav-link">FAQ</a>
+          <a href="#about" data-page="about" class="nav-link">About</a>
+          <a href="#contact" data-page="contact" class="nav-link nav-cta">Let's Talk</a>
+        </nav>
+
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+          <a href="/indo.html" class="lang-switch" title="Lihat dalam Bahasa Indonesia">🇮🇩 ID</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================================================
+         PAGES
+    ============================================================ -->
+    <main id="main-content">
+
+      <!-- ======================================================
+           PAGE: HOME
+      ====================================================== -->
+      <section class="page active" id="page-home">
+
+        <!-- Hero -->
+        <div class="hero">
+          <div class="container">
+            <div class="hero-eyebrow">Web Design &amp; Digital Presence</div>
+            <h1 class="hero-headline">Modern websites for service and industrial businesses.</h1>
+            <p class="hero-sub">Bridgepoint helps businesses build and maintain professional websites that improve credibility, visibility, and customer trust.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary" data-page="contact">Let's Talk</a>
+              <a href="#portfolio" class="btn btn-outline" data-page="portfolio">View Projects</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Projects Delivered</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">8</span>
+                <span class="stat-label">Industries Served</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Client Satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services Overview -->
+        <div class="section-light" id="services-overview">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-tag">What We Offer</div>
+              <h2>Everything your business needs online</h2>
+              <p>From first launch to ongoing maintenance — we handle the digital side so you can focus on your work.</p>
+            </div>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h3>Website Development</h3>
+                <p>Clean, professional sites built to convert visitors into inquiries. Fast, mobile-first, and easy to manage.</p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Website Maintenance</h3>
+                <p>Regular updates, content changes, and technical upkeep — so your site stays current and functional.</p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <h3>Hosting &amp; Deployment</h3>
+                <p>Reliable, fast hosting with SSL included. We handle the technical infrastructure from day one.</p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </div>
+                <h3>SEO Basics</h3>
+                <p>Structured pages, proper meta tags, Google-ready setup. Get found by the right customers locally.</p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3>Digital Presence Management</h3>
+                <p>Google Business, directory listings, brand consistency across platforms. Be visible where customers look.</p>
+              </div>
+            </div>
+            <div class="section-cta">
+              <a href="#services" class="btn btn-outline" data-page="services">See All Services</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Choose Bridgepoint -->
+        <div class="section-dark">
+          <div class="container">
+            <div class="section-header section-header-light">
+              <div class="section-tag section-tag-light">Why Bridgepoint</div>
+              <h2>Built for businesses that work with their hands</h2>
+              <p>We specialize in the industries that keep things running — not tech startups or lifestyle brands.</p>
+            </div>
+            <div class="why-grid">
+              <div class="why-item">
+                <div class="why-num">01</div>
+                <h3>Industry Focus</h3>
+                <p>We understand contractors, tradespeople, and B2B operators. Your site will speak to your actual customers.</p>
+              </div>
+              <div class="why-item">
+                <div class="why-num">02</div>
+                <h3>No Fluff</h3>
+                <p>Straightforward pricing, clear timelines, and honest communication. No jargon or surprises.</p>
+              </div>
+              <div class="why-item">
+                <div class="why-num">03</div>
+                <h3>Long-term Partnership</h3>
+                <p>We're not a one-off vendor. We grow with your business — updating, improving, and advising as you scale.</p>
+              </div>
+              <div class="why-item">
+                <div class="why-num">04</div>
+                <h3>Mobile-First</h3>
+                <p>Most of your customers find you on a phone. Every site we build looks and works perfectly on mobile.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="section-light">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-tag">Our Work</div>
+              <h2>Featured Projects</h2>
+              <p>A selection of recent work across service and industrial businesses.</p>
+            </div>
+            <div class="projects-grid">
+              <div class="project-card project-card-large">
+                <div class="project-img project-img-1">
+                  <div class="project-overlay">
+                    <span class="project-tag">Plumbing &amp; HVAC</span>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Steadfast Mechanical</h3>
+                  <p>Full website redesign for a 20-year-old plumbing and HVAC company. New brand, new site, 3x more inquiries.</p>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-img project-img-2">
+                  <div class="project-overlay">
+                    <span class="project-tag">Roofing</span>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Apex Roofing Co.</h3>
+                  <p>Lead-focused site with a quote form, service areas, and Google Maps integration.</p>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-img project-img-3">
+                  <div class="project-overlay">
+                    <span class="project-tag">Industrial B2B</span>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Meridian Industrial</h3>
+                  <p>Catalog-style site for a parts distributor serving construction and manufacturing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="section-cta">
+              <a href="#portfolio" class="btn btn-outline" data-page="portfolio">View All Projects</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Preview -->
+        <div class="section-subtle">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-tag">Questions</div>
+              <h2>Common questions</h2>
+            </div>
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  How long does it take to build a website?
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer">
+                  <p>Most projects take 2–4 weeks from kickoff to launch. Simpler sites can be done in under two weeks. We'll give you a clear timeline before we start.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  Do you work with businesses outside your area?
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes. We work with businesses across the country. Everything is handled remotely — calls, emails, and a shared workspace for feedback.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  What does a website cost?
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer">
+                  <p>It depends on scope. Basic sites start around $1,200. Larger projects with custom features or e-commerce are priced by scope. We always discuss budget upfront — no surprises.</p>
+                </div>
+              </div>
+            </div>
+            <div class="section-cta">
+              <a href="#faq" class="btn btn-outline" data-page="faq">See All Questions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="section-cta-block">
+          <div class="container">
+            <div class="cta-block">
+              <h2>Ready to build something that works?</h2>
+              <p>Let's talk about your business and what a stronger online presence can do for it.</p>
+              <div class="cta-actions">
+                <a href="#contact" class="btn btn-white" data-page="contact">Start the conversation</a>
+                <a href="https://wa.me/15551234567" class="btn btn-outline-white" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  WhatsApp Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ======================================================
+           PAGE: SERVICES
+      ====================================================== -->
+      <section class="page" id="page-services">
+        <div class="page-hero">
+          <div class="container">
+            <div class="section-tag">Services</div>
+            <h1>What We Do</h1>
+            <p>A focused set of services built around what service and industrial businesses actually need.</p>
+          </div>
+        </div>
+
+        <div class="section-light">
+          <div class="container">
+            <div class="services-detail-grid">
+
+              <div class="service-detail-card">
+                <div class="service-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <div class="service-detail-body">
+                  <h2>Website Development</h2>
+                  <p>We design and build professional websites from scratch — structured around your services, service areas, and the customers you want to reach. Every site is mobile-first, fast-loading, and built with conversion in mind.</p>
+                  <ul class="service-list">
+                    <li>Custom multi-page design</li>
+                    <li>Mobile-responsive layouts</li>
+                    <li>Contact and quote forms</li>
+                    <li>Service area pages</li>
+                    <li>Photo galleries and project showcases</li>
+                    <li>Google Maps and location integration</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="service-detail-card">
+                <div class="service-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="service-detail-body">
+                  <h2>Website Maintenance</h2>
+                  <p>Websites need care over time. We offer ongoing maintenance plans so your site stays updated, secure, and working correctly without you having to manage it yourself.</p>
+                  <ul class="service-list">
+                    <li>Content and text updates</li>
+                    <li>Photo and media replacements</li>
+                    <li>Technical updates and security patches</li>
+                    <li>Form and function testing</li>
+                    <li>Monthly performance reports</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="service-detail-card">
+                <div class="service-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <div class="service-detail-body">
+                  <h2>Hosting &amp; Deployment</h2>
+                  <p>We handle the full technical stack — domain setup, SSL certificate, hosting configuration, and deployment. No technical knowledge required on your end.</p>
+                  <ul class="service-list">
+                    <li>Domain registration and transfer</li>
+                    <li>SSL certificate (HTTPS)</li>
+                    <li>Managed hosting setup</li>
+                    <li>Uptime monitoring</li>
+                    <li>Backup and recovery</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="service-detail-card">
+                <div class="service-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </div>
+                <div class="service-detail-body">
+                  <h2>SEO Basics</h2>
+                  <p>Local and organic search visibility starts with the fundamentals. We set up your site to be found by the right people in your service area.</p>
+                  <ul class="service-list">
+                    <li>Keyword-targeted page structure</li>
+                    <li>Meta titles and descriptions</li>
+                    <li>Google Search Console setup</li>
+                    <li>Local schema markup</li>
+                    <li>Image optimization</li>
+                    <li>Site speed improvements</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="service-detail-card">
+                <div class="service-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div class="service-detail-body">
+                  <h2>Digital Presence Management</h2>
+                  <p>Your website is one piece of your online presence. We help make sure the rest of it — Google Business, directories, social profiles — matches your brand and is working for you.</p>
+                  <ul class="service-list">
+                    <li>Google Business Profile setup and optimization</li>
+                    <li>Directory listing submissions</li>
+                    <li>NAP consistency (name, address, phone)</li>
+                    <li>Review generation strategy</li>
+                    <li>Brand consistency audit</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="section-cta-block">
+          <div class="container">
+            <div class="cta-block">
+              <h2>Not sure which services you need?</h2>
+              <p>Tell us about your business and we'll give you an honest recommendation.</p>
+              <a href="#contact" class="btn btn-white" data-page="contact">Talk to Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           PAGE: PORTFOLIO
+      ====================================================== -->
+      <section class="page" id="page-portfolio">
+        <div class="page-hero">
+          <div class="container">
+            <div class="section-tag">Portfolio</div>
+            <h1>Our Work</h1>
+            <p>Concept designs and demo projects across the industries we serve.</p>
+          </div>
+        </div>
+
+        <div class="section-light">
+          <div class="container">
+            <div class="portfolio-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="redesign">Redesigns</button>
+              <button class="filter-btn" data-filter="new">New Sites</button>
+              <button class="filter-btn" data-filter="b2b">B2B</button>
+            </div>
+
+            <div class="portfolio-grid">
+
+              <div class="portfolio-item" data-category="redesign">
+                <div class="portfolio-img portfolio-img-1">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-overlay-content">
+                      <span class="portfolio-tag">Plumbing &amp; HVAC — Redesign</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h3>Steadfast Mechanical</h3>
+                  <p>Full brand and website overhaul for a residential plumbing and HVAC contractor. New visual identity, improved service pages, and a streamlined contact flow.</p>
+                  <div class="portfolio-tags">
+                    <span>Web Design</span>
+                    <span>Branding</span>
+                    <span>SEO</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item" data-category="new">
+                <div class="portfolio-img portfolio-img-2">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-overlay-content">
+                      <span class="portfolio-tag">Roofing — New Site</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h3>Apex Roofing Co.</h3>
+                  <p>Lead-generation focused site for a regional roofing company. Prominent phone and quote CTAs, service area pages, and photo gallery of completed jobs.</p>
+                  <div class="portfolio-tags">
+                    <span>Web Design</span>
+                    <span>Lead Gen</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item" data-category="b2b">
+                <div class="portfolio-img portfolio-img-3">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-overlay-content">
+                      <span class="portfolio-tag">Industrial B2B</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h3>Meridian Industrial</h3>
+                  <p>Catalog-style website for a parts distributor serving construction and manufacturing clients. Clean product categorization and inquiry form by product line.</p>
+                  <div class="portfolio-tags">
+                    <span>B2B</span>
+                    <span>Catalog</span>
+                    <span>Custom Forms</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item" data-category="new">
+                <div class="portfolio-img portfolio-img-4">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-overlay-content">
+                      <span class="portfolio-tag">Landscaping — New Site</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h3>Groundwork Landscaping</h3>
+                  <p>Portfolio-heavy site for a commercial and residential landscaping company. Before/after galleries, seasonal promotions, and service area map.</p>
+                  <div class="portfolio-tags">
+                    <span>Web Design</span>
+                    <span>Gallery</span>
+                    <span>Google Maps</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item" data-category="redesign">
+                <div class="portfolio-img portfolio-img-5">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-overlay-content">
+                      <span class="portfolio-tag">Electrical — Redesign</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h3>Vantage Electrical</h3>
+                  <p>Website update for an established electrical contractor. Modernized design, updated service descriptions, and improved mobile experience.</p>
+                  <div class="portfolio-tags">
+                    <span>Redesign</span>
+                    <span>Mobile Optimization</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-item portfolio-item-placeholder" data-category="new">
+                <div class="portfolio-img portfolio-img-placeholder">
+                  <div class="placeholder-text">
+                    <span>Your project</span>
+                    <span>could be here</span>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h3>Your Business</h3>
+                  <p>We're always taking on new clients. Reach out and let's talk about what your website could look like.</p>
+                  <a href="#contact" class="btn btn-sm" data-page="contact">Start a Project</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           PAGE: FAQ
+      ====================================================== -->
+      <section class="page" id="page-faq">
+        <div class="page-hero">
+          <div class="container">
+            <div class="section-tag">FAQ</div>
+            <h1>Frequently Asked Questions</h1>
+            <p>Honest answers to the questions we hear most often from business owners.</p>
+          </div>
+        </div>
+
+        <div class="section-light">
+          <div class="container faq-container">
+
+            <div class="faq-group">
+              <h2 class="faq-group-title">General</h2>
+              <div class="faq-list">
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    How long does it take to build a website?
+                    <span class="faq-icon"></span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Most projects take 2–4 weeks from kickoff to launch. Simpler sites with fewer pages can be done in under two weeks. More complex projects with custom features may take 4–6 weeks. We give you a realistic timeline before work begins and stick to it.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    Do I need to be tech-savvy to work with you?
+                    <span class="faq-icon"></span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Not at all. We handle everything technical. You just need to tell us about your business, provide some photos and text, and give us feedback along the way. We'll do the rest.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    Do you work with businesses outside your local area?
+                    <span class="faq-icon"></span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Yes. We work with businesses across the country. All collaboration happens remotely — through calls, emails, and a shared workspace where you can review and approve work at any stage.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-group">
+              <h2 class="faq-group-title">Pricing &amp; Process</h2>
+              <div class="faq-list">
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    What does a website cost?
+                    <span class="faq-icon"></span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>It depends on the scope of the project. Basic informational sites typically start around $1,200. More complex sites with custom functionality, e-commerce, or many pages are priced by scope after a consultation. We always discuss budget before starting — no surprises.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    What is your process like?
+                    <span class="faq-icon"></span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>We start with a call to understand your business and goals. Then we put together a proposal with scope and price. Once approved, we build a draft, get your feedback, make revisions, and launch. Simple and structured.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    Do you offer payment plans?
+                    <span class="faq-icon"></span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Yes. We typically work with a 50% deposit at the start and 50% upon completion. For larger projects, we can discuss milestone-based payments. Reach out and we'll find something that works for you.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-group">
+              <h2 class="faq-group-title">After Launch</h2>
+              <div class="faq-list">
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    Will I be able to update the website myself?
+                    <span class="faq-icon"></span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>That depends on how we build it. Some sites include a simple CMS so you can make text and image changes yourself. Others are better maintained by us. We'll discuss your preference during the project planning phase.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    What happens if something breaks after launch?
+                    <span class="faq-icon"></span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>We offer a 30-day post-launch support window for all projects. If anything stops working due to our work, we fix it at no charge. After 30 days, site support is available through our maintenance plans.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">
+                    Do you offer monthly maintenance?
+                    <span class="faq-icon"></span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Yes. We offer monthly maintenance packages that include content updates, security patches, backups, and technical support. Pricing starts at $79/month depending on scope. Ask us about this when you reach out.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-cta-block">
+          <div class="container">
+            <div class="cta-block">
+              <h2>Still have questions?</h2>
+              <p>Send us a message and we'll get back to you promptly.</p>
+              <a href="#contact" class="btn btn-white" data-page="contact">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           PAGE: ABOUT
+      ====================================================== -->
+      <section class="page" id="page-about">
+        <div class="page-hero">
+          <div class="container">
+            <div class="section-tag">About</div>
+            <h1>About Bridgepoint</h1>
+            <p>A web design agency focused on building credibility for businesses that do real work.</p>
+          </div>
+        </div>
+
+        <div class="section-light">
+          <div class="container">
+            <div class="about-intro">
+              <div class="about-text">
+                <h2>What We Do</h2>
+                <p>Bridgepoint is a web design and digital presence agency. We build professional websites for service businesses, contractors, industrial companies, and B2B operators.</p>
+                <p>We're not a generalist agency that works with every type of client. We've built our process, our pricing, and our approach around one type of business: companies that work with their hands, serve specific industries, and need a web presence that reflects the quality of their work.</p>
+                <p>Whether you're a plumbing company that's been around for 20 years and still has a website from 2012, or a newer contractor trying to establish credibility with commercial clients — we can help.</p>
+              </div>
+              <div class="about-visual">
+                <div class="about-stat-block">
+                  <div class="about-stat">
+                    <span class="about-stat-num">50+</span>
+                    <span class="about-stat-label">Projects Delivered</span>
+                  </div>
+                  <div class="about-stat">
+                    <span class="about-stat-num">8</span>
+                    <span class="about-stat-label">Industries Served</span>
+                  </div>
+                  <div class="about-stat">
+                    <span class="about-stat-num">4 yrs</span>
+                    <span class="about-stat-label">In Business</span>
+                  </div>
+                  <div class="about-stat">
+                    <span class="about-stat-num">2–4 wks</span>
+                    <span class="about-stat-label">Avg. Project Timeline</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-subtle">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-tag">Who We Help</div>
+              <h2>The businesses we serve</h2>
+            </div>
+            <div class="industries-grid">
+              <div class="industry-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                <span>General Contractors</span>
+              </div>
+              <div class="industry-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/></svg>
+                <span>Plumbing &amp; HVAC</span>
+              </div>
+              <div class="industry-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <span>Electrical Contractors</span>
+              </div>
+              <div class="industry-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Roofing Companies</span>
+              </div>
+              <div class="industry-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                <span>Industrial B2B</span>
+              </div>
+              <div class="industry-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                <span>Logistics &amp; Transport</span>
+              </div>
+              <div class="industry-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M3 9h18M3 15h18M9 3v18"/></svg>
+                <span>Service Businesses</span>
+              </div>
+              <div class="industry-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                <span>Manufacturing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-light">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-tag">Our Approach</div>
+              <h2>How we work</h2>
+            </div>
+            <div class="approach-steps">
+              <div class="approach-step">
+                <div class="step-num">01</div>
+                <div class="step-body">
+                  <h3>Discovery Call</h3>
+                  <p>We start by learning about your business — what you do, who your customers are, what you need from a website, and what hasn't worked in the past.</p>
+                </div>
+              </div>
+              <div class="approach-step">
+                <div class="step-num">02</div>
+                <div class="step-body">
+                  <h3>Proposal &amp; Scope</h3>
+                  <p>We put together a clear proposal: what we'll build, how long it will take, and exactly what it will cost. No vague estimates.</p>
+                </div>
+              </div>
+              <div class="approach-step">
+                <div class="step-num">03</div>
+                <div class="step-body">
+                  <h3>Design &amp; Build</h3>
+                  <p>We design and build your site in structured phases. You'll see the work at key milestones and provide feedback before we move forward.</p>
+                </div>
+              </div>
+              <div class="approach-step">
+                <div class="step-num">04</div>
+                <div class="step-body">
+                  <h3>Launch &amp; Support</h3>
+                  <p>We handle the launch, make sure everything is working, and stay available for questions and adjustments in the weeks after you go live.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ======================================================
+           PAGE: CONTACT
+      ====================================================== -->
+      <section class="page" id="page-contact">
+        <div class="page-hero">
+          <div class="container">
+            <div class="section-tag">Contact</div>
+            <h1>Let's Talk</h1>
+            <p>Tell us about your business and what you're looking for. We'll respond within one business day.</p>
+          </div>
+        </div>
+
+        <div class="section-light">
+          <div class="container">
+            <div class="contact-layout">
+
+              <div class="contact-methods">
+                <h2>Reach Us Directly</h2>
+                <p>Prefer to reach out yourself? We're available by WhatsApp or email.</p>
+
+                <a href="https://wa.me/15551234567" class="contact-method-card" target="_blank" rel="noopener">
+                  <div class="contact-method-icon contact-icon-wa">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  </div>
+                  <div class="contact-method-body">
+                    <div class="contact-method-label">WhatsApp</div>
+                    <div class="contact-method-value">+1 (555) 123-4567</div>
+                    <div class="contact-method-note">Usually responds within a few hours</div>
+                  </div>
+                  <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+
+                <a href="mailto:hello@bridgepointagency.com" class="contact-method-card">
+                  <div class="contact-method-icon contact-icon-email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div class="contact-method-body">
+                    <div class="contact-method-label">Email</div>
+                    <div class="contact-method-value">hello@bridgepointagency.com</div>
+                    <div class="contact-method-note">Replies within one business day</div>
+                  </div>
+                  <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <div class="contact-form-wrap">
+                <h2>Send an Inquiry</h2>
+                <form class="contact-form" id="contact-form" novalidate>
+                  <div class="form-group">
+                    <label for="name">Your Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="John Smith" required>
+                    <div class="field-error" id="name-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="business">Business Name <span class="required">*</span></label>
+                    <input type="text" id="business" name="business" placeholder="Smith Roofing Co." required>
+                    <div class="field-error" id="business-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-input">Email or WhatsApp <span class="required">*</span></label>
+                    <input type="text" id="contact-input" name="contact" placeholder="email@example.com or +1 555 000 0000" required>
+                    <div class="field-error" id="contact-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your business and what you're looking for..." required></textarea>
+                    <div class="field-error" id="message-error"></div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-full" id="form-submit">Send Message</button>
+                  <div class="form-success" id="form-success" style="display:none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <p>Message sent! We'll get back to you within one business day.</p>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo" data-page="home">
+              <span class="logo-mark">B</span>
+              <span class="logo-text">Bridgepoint</span>
+            </a>
+            <p>Modern websites for service and industrial businesses. Clear, professional, and built to convert.</p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-col">
+              <h4>Pages</h4>
+              <a href="#home" data-page="home">Home</a>
+              <a href="#services" data-page="services">Services</a>
+              <a href="#portfolio" data-page="portfolio">Portfolio</a>
+              <a href="#faq" data-page="faq">FAQ</a>
+              <a href="#about" data-page="about">About</a>
+            </div>
+            <div class="footer-col">
+              <h4>Contact</h4>
+              <a href="https://wa.me/15551234567" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="mailto:hello@bridgepointagency.com">Email Us</a>
+              <a href="#contact" data-page="contact">Send Inquiry</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2025 Bridgepoint Agency. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
