@@ -756,6 +756,15 @@ button {
   border-bottom: 2px solid var(--color-border);
 }
 
+.faq-answer ol {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 1.25rem;
+}
+
+.faq-answer li {
+  margin-bottom: 8px;
+}
 /* ============================================================
    14. PAGE HERO (inner pages)
    ============================================================ */
@@ -1596,4 +1605,32 @@ button {
     background: var(--color-bg-dark);
     border-bottom-color: var(--color-border-dark);
   }
+}
+
+/* =========================
+   PRICING PAGE
+========================= */
+
+.pricing-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pricing-subplan {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* If using light mode instead of dark,
+replace the border-top above with:
+border-top: 1px solid rgba(0,0,0,0.08);
+*/
+
+.pricing-note {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.75;
+  line-height: 1.6;
 }
