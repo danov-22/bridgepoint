@@ -281,7 +281,7 @@ button {
 
 .section-subtle {
   background: var(--color-bg-subtle);
-  padding: var(--space-2xl) 0;
+  padding: 140px 0;
 }
 
 /* ============================================================
@@ -658,6 +658,7 @@ button {
 
 .faq-item {
   border-bottom: 1px solid var(--color-border);
+  padding: 4px 0;
 }
 
 .faq-question {
@@ -666,7 +667,7 @@ button {
   justify-content: space-between;
   width: 100%;
   text-align: left;
-  padding: 1.25rem 0;
+  padding: 1.5rem 0;
   font-size: 0.975rem;
   font-weight: 500;
   color: var(--color-text);
@@ -1621,6 +1622,15 @@ button {
   margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.pricing-card {
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.pricing-grid {
+  gap: 32px;
 }
 
 /* If using light mode instead of dark,
