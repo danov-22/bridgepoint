@@ -265,31 +265,56 @@ function validateForm() {
   return valid;
 }
 
-if (contactForm) {
-  contactForm.addEventListener('submit', function(e) {
+document.addEventListener("DOMContentLoaded", function () {
+
+  const contactForm = document.getElementById("contact-form");
+
+  if (!contactForm) {
+    console.log("Contact form not found on this page");
+    return;
+  }
+
+  contactForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    if (!validateForm()) return;
+    const submitBtn = document.getElementById("form-submit");
 
-    formSubmit.disabled = true;
-    formSubmit.textContent = 'Sending...';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+    }
 
-    setTimeout(function() {
+    const data = {
+      name: document.getElementById("name")?.value || "",
+      business: document.getElementById("business")?.value || "",
+      email: document.getElementById("contact-input")?.value || "",
+      message: document.getElementById("message")?.value || ""
+    };
+
+    try {
+      await fetch("YOUR_SCRIPT_URL", {
+        method: "POST",
+        body: JSON.stringify(data),
+        mode: "no-cors"
+      });
+
+      const success = document.getElementById("form-success");
+      if (success) success.style.display = "flex";
+
       contactForm.reset();
-      clearAllErrors();
-      formSubmit.style.display = 'none';
-      if (formSuccess) formSuccess.style.display = 'flex';
-    }, 1200);
+
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong");
+    }
+
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send Message";
+    }
   });
 
-  var formInputs = contactForm.querySelectorAll('input, textarea');
-  formInputs.forEach(function(input) {
-    input.addEventListener('input', function() {
-      var id = this.id;
-      clearError(id);
-    });
-  });
-}
+});
 
 /* ============================================================
    7. SCROLL REVEAL ANIMATION (subtle entrance)
