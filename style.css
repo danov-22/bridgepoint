@@ -197,15 +197,11 @@ button {
   background: rgba(255,255,255,0.08);
 }
 
-:root:not([data-theme="dark"]) .site-header .nav-links .nav-link {
-  color: var(--color-text);
-}
-
 :root:not([data-theme="dark"]) .site-header .nav-links.open .nav-link {
   color: var(--color-text);
 }
 
-:root:not([data-theme="dark"]) .site-header .nav-links .nav-link.nav-cta {
+:root:not([data-theme="dark"]) .site-header .nav-links.open .nav-link.nav-cta {
   color: white;
 }
 
