@@ -14,20 +14,24 @@
 
 :root {
   /* Colors */
-  --color-bg:          #f9f9f8;
+  --color-bg:          #F8FAFC;
   --color-bg-light:    #ffffff;
   --color-bg-subtle:   #f4f3f1;
   --color-bg-dark:     #18181b;
   --color-bg-darker:   #111113;
 
-  --color-text:        #18181b;
+  --color-text:        #111827;
   --color-text-muted:  #6b7280;
   --color-text-light:  #f9f9f8;
   --color-text-dim:    #a1a1aa;
 
-  --color-accent:      #1e4fcc;
-  --color-accent-dark: #1640a8;
-  --color-accent-bg:   #eef2ff;
+  --color-accent:      #0F4DB8;
+  --color-accent-dark: #071B3A;
+  --color-accent-rgb:  15, 77, 184;
+  --color-accent-bg:   #D6E4F5;
+  --color-hero-dark:   #071B3A;
+  --color-hero-mid:    #0F4DB8;
+  --color-hero-light:  #D6E4F5;
 
   --color-border:      #e4e4e7;
   --color-border-dark: #2d2d31;
@@ -233,15 +237,15 @@ button {
 }
 
 .nav-link.nav-cta {
-  background: var(--color-text);
-  color: var(--color-text-light);
+  background: var(--color-accent);
+  color: white;
   padding: 0.45rem 1rem;
   margin-left: 0.5rem;
   border-radius: var(--radius-md);
 }
 
 .nav-link.nav-cta:hover {
-  background: #333;
+  background: var(--color-accent-dark);
   color: white;
 }
 
@@ -404,13 +408,14 @@ button {
 
 .btn-outline {
   background: transparent;
-  color: var(--color-text);
-  border-color: var(--color-border);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .btn-outline:hover {
-  border-color: var(--color-text-muted);
-  background: var(--color-bg-subtle);
+  border-color: var(--color-accent-dark);
+  color: var(--color-accent-dark);
+  background: var(--color-accent-bg);
 }
 
 .btn-white {
@@ -557,7 +562,7 @@ button {
 }
 
 .section-tag-light {
-  color: #7aa3f7;
+  color: var(--color-hero-light);
   background: rgba(255,255,255,0.1);
 }
 
@@ -570,7 +575,12 @@ button {
    8. HERO
    ============================================================ */
 .hero {
-  background: var(--color-bg-dark);
+  background: linear-gradient(
+    135deg,
+    var(--color-hero-dark) 0%,
+    var(--color-hero-mid) 50%,
+    var(--color-hero-light) 100%
+  );
   padding: var(--space-2xl) 0;
   padding-top: calc(var(--space-2xl) + 1rem);
 }
@@ -580,7 +590,7 @@ button {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #7aa3f7;
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 1.25rem;
 }
 
@@ -596,7 +606,7 @@ button {
 
 .hero-sub {
   font-size: 1.1rem;
-  color: #a1a1aa;
+  color: rgba(255, 255, 255, 0.85);
   max-width: 520px;
   margin-bottom: var(--space-lg);
   line-height: 1.7;
@@ -612,7 +622,7 @@ button {
 .hero-stats {
   display: flex;
   gap: var(--space-xl);
-  border-top: 1px solid var(--color-border-dark);
+  border-top: 1px solid rgba(255,255,255,0.18);
   padding-top: var(--space-lg);
 }
 
@@ -624,11 +634,12 @@ button {
   letter-spacing: -0.03em;
 }
 
+.stat-text,
 .stat-label {
   display: block;
   font-size: 0.8rem;
-  color: #71717a;
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 600;
   margin-top: 0.2rem;
 }
 
@@ -1294,7 +1305,7 @@ button {
 
 .contact-method-card:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(30, 79, 204, 0.08);
+  box-shadow: 0 0 0 3px rgba(var(--color-accent-rgb), 0.08);
 }
 
 .contact-method-icon {
@@ -1728,7 +1739,13 @@ button {
   --color-text:        #f4f4f5;
   --color-text-muted:  #a1a1aa;
   --color-text-dim:    #71717a;
-  --color-accent-bg:   #1a2a55;
+  --color-accent:      #6CA2FF;
+  --color-accent-dark: #0A305F;
+  --color-accent-rgb:  108, 162, 255;
+  --color-accent-bg:   #15255b;
+  --color-hero-dark:   #071B3A;
+  --color-hero-mid:    #0F4DB8;
+  --color-hero-light:  #3C6FD1;
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.5);
   --shadow-lg: 0 10px 30px rgba(0,0,0,0.6);
