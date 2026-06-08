@@ -205,6 +205,10 @@ button {
   color: var(--color-text);
 }
 
+:root:not([data-theme="dark"]) .site-header .nav-links .nav-link.nav-cta {
+  color: white;
+}
+
 :root:not([data-theme="dark"]) .site-header .hamburger span {
   background: rgba(255,255,255,0.95);
 }
