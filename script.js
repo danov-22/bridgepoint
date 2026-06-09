@@ -111,10 +111,23 @@ if (themeToggleBtn) {
 /* ============================================================
    3c. LOGO MODAL & ZOOM
    ============================================================ */
-var logoTrigger = document.querySelector('.logo-trigger');
+var logoTriggers = document.querySelectorAll('.logo-trigger');
 var logoModal = document.getElementById('logoModal');
 var logoClose = document.querySelector('.logo-close');
 var logoModalImg = document.getElementById('logoModalImg');
+
+function openLogoModal(trigger) {
+  if (logoModal) {
+    logoModal.classList.add('active');
+  }
+
+  if (logoModalImg && trigger) {
+    var triggerImg = trigger.querySelector('img');
+    if (triggerImg) {
+      logoModalImg.src = triggerImg.currentSrc || triggerImg.src;
+    }
+  }
+}
 
 function closeLogoModal() {
   if (logoModal) {
@@ -123,9 +136,12 @@ function closeLogoModal() {
   }
 }
 
-if (logoTrigger && logoModal) {
-  logoTrigger.addEventListener('click', function() {
-    logoModal.classList.add('active');
+if (logoTriggers.length && logoModal) {
+  logoTriggers.forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      openLogoModal(trigger);
+    });
   });
 
   if (logoClose) {
