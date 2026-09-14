@@ -47,7 +47,7 @@ function navigateTo(pageId) {
 
 function getPageFromHash() {
   var hash = window.location.hash.replace('#', '');
-  var validPages = ['home', 'services', 'portfolio', 'faq', 'about', 'contact'];
+  var validPages = ['home', 'services', 'portfolio', 'pricing', 'faq', 'about', 'contact'];
   return validPages.indexOf(hash) !== -1 ? hash : 'home';
 }
 
