@@ -358,7 +358,7 @@ h2 { font-size: clamp(2.25rem, 5vw, 5.3rem); line-height: .95; }
 
 .site-header { height: 76px; background: rgba(247,244,238,.82); border-bottom: 1px solid rgba(222,216,205,.8); }
 :root[data-theme="dark"] .site-header { background: rgba(25,25,25,.84); border-color: rgba(68,65,59,.8); }
-.nav-logo-image img { width: 31px; height: 31px; filter: grayscale(1) contrast(1.6); }
+.nav-logo-image img { width: 31px; height: 31px; filter: none; }
 .nav-logo-text { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; }
 .nav-link { color: var(--color-text); border-radius: 999px; font-size: .78rem; letter-spacing: .02em; }
 .nav-link:hover, .nav-link.active { color: var(--color-text); background: var(--color-accent-bg); }
@@ -612,6 +612,17 @@ p { font-size: 1rem; }
 
 :root[data-theme="dark"] .service-card:hover {
   background: #263c62;
+}
+
+.nav-logo-text .logo-text {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -.055em;
+}
+
+.hero::after {
+  content: none !important;
+  display: none;
 }
 
 /* Navigation and WhatsApp brand corrections */
