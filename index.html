@@ -19,7 +19,8 @@ if (MAINTENANCE_MODE) {
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/bridgepoint-b-green.svg">
     <link rel="stylesheet" href="style.css">
     <script>
       (function() {
@@ -38,7 +39,7 @@ if (MAINTENANCE_MODE) {
       <div class="container nav-container">
         <a href="#home" class="nav-logo" data-page="home">
           <div class="nav-logo-image logo-trigger">
-            <img src="./images/bridgepoint_main_og.png" alt="Bridgepoint Logo">
+            <img src="./images/bridgepoint-b-green.svg" alt="Bridgepoint Logo">
           </div>
           <span class="nav-logo-text">
             <span class="logo-text">Bridgepoint</span>
@@ -74,7 +75,7 @@ if (MAINTENANCE_MODE) {
     <!-- LOGO MODAL -->
   <div class="logo-modal" id="logoModal">
     <span class="logo-close">&times;</span>
-    <img class="logo-modal-content" id="logoModalImg" src="./images/bridgepoint_main_og.png" alt="Bridgepoint Logo">
+    <img class="logo-modal-content" id="logoModalImg" src="./images/bridgepoint-b-green.svg" alt="Bridgepoint Logo">
   </div>
 
     <!-- ============================================================
@@ -91,7 +92,7 @@ if (MAINTENANCE_MODE) {
         <div class="hero">
           <div class="container">
             <div class="hero-eyebrow">Web Design &amp; Digital Presence</div>
-            <h1 class="hero-headline">Modern websites for service and industrial businesses.</h1>
+            <h1 class="hero-headline">Modern websites for service and businesses.</h1>
             <p class="hero-sub">Bridgepoint helps businesses build and maintain professional websites that improve credibility, visibility, and customer trust.</p>
             <div class="hero-actions">
               <a href="#contact" class="btn btn-primary" data-page="contact">Let's Talk</a>
@@ -205,14 +206,14 @@ if (MAINTENANCE_MODE) {
             </div>
             <div class="projects-grid">
               <div class="project-card project-card-large">
-                <div class="project-img project-img-1">
-                  <div class="project-overlay">
-                    <span class="project-tag">Plumbing &amp; HVAC</span>
-                  </div>
+                <div class="project-img portfolio-img-xcarbon">
+                  <img class="portfolio-site-image" src="images/xcarbon-homepage-preview.png" alt="Xcarbontechnik homepage preview" loading="lazy">
+                  <div class="project-overlay"><span class="project-tag">Industrial CNG</span></div>
                 </div>
                 <div class="project-info">
-                  <h3>Steadfast Mechanical</h3>
-                  <p>Full website redesign for a 20-year-old plumbing and HVAC company. New brand, new site, 3x more inquiries.</p>
+                  <h3>Xcarbontechnik</h3>
+                  <p>A product website for a German engineering company supplying Type 4 composite CNG cylinders for domestic and industrial use.</p>
+                  <a class="btn btn-sm portfolio-preview-link" href="https://xcarbontechnik.com/" target="_blank" rel="noopener noreferrer">View Live Site</a>
                 </div>
               </div>
               <div class="project-card">
@@ -308,6 +309,8 @@ if (MAINTENANCE_MODE) {
       <!-- ======================================================
            PAGE: SERVICES
       ====================================================== -->
+      <details class="landing-detail" id="detail-services">
+        <summary><span>Explore service details</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-services">
         <div class="page-hero">
           <div class="container">
@@ -422,10 +425,13 @@ if (MAINTENANCE_MODE) {
           </div>
         </div>
       </section>
+      </details>
 
       <!-- ======================================================
            PAGE: PORTFOLIO
       ====================================================== -->
+      <details class="landing-detail" id="detail-portfolio">
+        <summary><span>Explore all projects</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-portfolio">
         <div class="page-hero">
           <div class="container">
@@ -541,8 +547,8 @@ if (MAINTENANCE_MODE) {
 
               <div class="portfolio-item" data-category="new">
                 <div class="portfolio-img portfolio-img-xcarbon">
-                  <img class="portfolio-site-image" src="images/xcarbon-homepage-preview.png" alt="XCarbon Technik homepage showing its CNG cylinder product and black and red design" loading="lazy">
-                  <a class="portfolio-preview-panel" href="https://xcarbontechnik.com/" target="_blank" rel="noopener noreferrer" aria-label="Open XCarbon Technik live preview">
+                  <img class="portfolio-site-image" src="images/xcarbon-homepage-preview.png" alt="Xcarbontechnik homepage showing its CNG cylinder product and black and red design" loading="lazy">
+                  <a class="portfolio-preview-panel" href="https://xcarbontechnik.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Xcarbontechnik live preview">
                     <span class="portfolio-preview-action">Open live site <span aria-hidden="true">↗</span></span>
                   </a>
                   <div class="portfolio-overlay">
@@ -552,7 +558,7 @@ if (MAINTENANCE_MODE) {
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h3>XCarbon Technik</h3>
+                  <h3>Xcarbontechnik</h3>
                   <p>New product website for a German engineering company supplying lightweight, certified Type 4 composite CNG cylinders for domestic and commercial industrial use.</p>
                   <div class="portfolio-tags">
                     <span>Web Design</span>
@@ -581,10 +587,13 @@ if (MAINTENANCE_MODE) {
           </div>
         </div>
       </section>
+      </details>
 
       <!-- ======================================================
           PAGE: Pricing 
       ====================================================== -->
+      <details class="landing-detail" id="detail-pricing">
+        <summary><span>Explore pricing and packages</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-pricing">
 
         <!-- HERO -->
@@ -886,10 +895,13 @@ if (MAINTENANCE_MODE) {
           </div>
         </div>
       </section>
+      </details>
       
       <!-- ======================================================
            PAGE: FAQ
       ====================================================== -->
+      <details class="landing-detail" id="detail-faq">
+        <summary><span>Explore all frequently asked questions</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-faq">
         <div class="page-hero">
           <div class="container">
@@ -1078,10 +1090,13 @@ if (MAINTENANCE_MODE) {
           </div>
         </div>
       </section>
+      </details>
 
       <!-- ======================================================
            PAGE: ABOUT
       ====================================================== -->
+      <details class="landing-detail" id="detail-about">
+        <summary><span>Get to know Bridgepoint</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-about">
         <div class="page-hero">
           <div class="container">
@@ -1207,6 +1222,7 @@ if (MAINTENANCE_MODE) {
         </div>
 
       </section>
+      </details>
 
       <!-- ======================================================
            PAGE: CONTACT
@@ -1290,6 +1306,17 @@ if (MAINTENANCE_MODE) {
       </section>
 
     </main>
+    <aside class="help-widget" aria-label="Bridgepoint help">
+      <div class="help-panel" id="help-panel" hidden>
+        <div class="help-heading"><strong>Ask Bridgepoint</strong><button type="button" class="help-close" aria-label="Close help">?</button></div>
+        <p>Choose a question or search the answers on our site.</p>
+        <div class="help-messages" aria-live="polite"></div>
+        <div class="help-suggestions"></div>
+        <form class="help-form"><label class="visually-hidden" for="help-input">Your question</label><input id="help-input" required placeholder="Type a question?"><button type="submit">Ask</button></form>
+        <a class="help-whatsapp" href="https://wa.me/6289504556187" target="_blank" rel="noopener noreferrer">Need a personal answer? Talk to us on WhatsApp</a>
+      </div>
+      <button type="button" class="help-toggle" aria-expanded="false" aria-controls="help-panel">Have a question?</button>
+    </aside>
 
     <a href="https://wa.me/6289504556187?text=Hi%20Bridgepoint%2C%20I%20want%20to%20learn%20more%20about%20web%20design." class="whatsapp-float whatsapp-float--icon-only" target="_blank" rel="noopener noreferrer">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp-float__img">
@@ -1305,13 +1332,13 @@ if (MAINTENANCE_MODE) {
           <div class="footer-brand">
             <a href="#home" class="logo" data-page="home">
               <div class="nav-logo-image logo-trigger">
-            <img src="./images/bridgepoint_main_og.png" alt="Bridgepoint Logo">
+            <img src="./images/bridgepoint-b-green.svg" alt="Bridgepoint Logo">
               </div>
                 <span class="nav-logo-text">
                 <span class="logo-text">Bridgepoint</span>
                 </span>
             </a>
-            <p>Modern websites for service and industrial businesses. <br> Clear, professional, and built to convert.</p>
+            <p>Building bridges between businesses and customers. <br> Clear, professional, and built to convert.</p>
           </div>
           <div class="footer-nav">
             <div class="footer-col">

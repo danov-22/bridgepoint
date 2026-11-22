@@ -19,7 +19,8 @@ if (MAINTENANCE_MODE) {
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/bridgepoint-b-green.svg">
     <link rel="stylesheet" href="style.css">
     <script>
       (function() {
@@ -38,7 +39,7 @@ if (MAINTENANCE_MODE) {
       <div class="container nav-container">
         <a href="#home" class="nav-logo" data-page="home">
           <div class="nav-logo-image logo-trigger">
-            <img src="./images/bridgepoint_main_og.png" alt="Logo Bridgepoint">
+            <img src="./images/bridgepoint-b-green.svg" alt="Logo Bridgepoint">
           </div>
           <span class="nav-logo-text">
             <span class="logo-text">Bridgepoint</span>
@@ -74,7 +75,7 @@ if (MAINTENANCE_MODE) {
     <!-- LOGO MODAL -->
     <div class="logo-modal" id="logoModal">
       <span class="logo-close">&times;</span>
-      <img class="logo-modal-content" id="logoModalImg" src="./images/bridgepoint_main_og.png" alt="Logo Bridgepoint">
+      <img class="logo-modal-content" id="logoModalImg" src="./images/bridgepoint-b-green.svg" alt="Logo Bridgepoint">
     </div>
 
     <!-- ============================================================
@@ -91,7 +92,7 @@ if (MAINTENANCE_MODE) {
         <div class="hero">
           <div class="container">
             <div class="hero-eyebrow">Desain Web &amp; Kehadiran Digital</div>
-            <h1 class="hero-headline">Situs modern untuk bisnis jasa dan industri.</h1>
+            <h1 class="hero-headline">Situs modern untuk layanan dan bisnis.</h1>
             <p class="hero-sub">Bridgepoint membantu bisnis membangun dan mempertahankan situs profesional yang meningkatkan kredibilitas, visibilitas, dan kepercayaan pelanggan.</p>
             <div class="hero-actions">
               <a href="#contact" class="btn btn-primary" data-page="contact">Hubungi Kami</a>
@@ -205,14 +206,14 @@ if (MAINTENANCE_MODE) {
             </div>
             <div class="projects-grid">
               <div class="project-card project-card-large">
-                <div class="project-img project-img-1">
-                  <div class="project-overlay">
-                    <span class="project-tag">Plumbing &amp; HVAC</span>
-                  </div>
+                <div class="project-img portfolio-img-xcarbon">
+                  <img class="portfolio-site-image" src="images/xcarbon-homepage-preview.png" alt="Pratinjau beranda Xcarbontechnik" loading="lazy">
+                  <div class="project-overlay"><span class="project-tag">Industrial CNG</span></div>
                 </div>
                 <div class="project-info">
-                  <h3>Steadfast Mechanical</h3>
-                  <p>Redesign website lengkap untuk perusahaan plumbing dan HVAC berusia 20 tahun. Identitas baru, situs baru, 3x lebih banyak prospek.</p>
+                  <h3>Xcarbontechnik</h3>
+                  <p>Website produk untuk perusahaan engineering Jerman yang menyediakan silinder CNG komposit Type 4 untuk penggunaan rumah tangga dan industri.</p>
+                  <a class="btn btn-sm portfolio-preview-link" href="https://xcarbontechnik.com/" target="_blank" rel="noopener noreferrer">Lihat Situs</a>
                 </div>
               </div>
               <div class="project-card">
@@ -308,6 +309,8 @@ if (MAINTENANCE_MODE) {
       <!-- ======================================================
            PAGE: SERVICES
       ====================================================== -->
+      <details class="landing-detail" id="detail-services">
+        <summary><span>Lihat detail layanan</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-services">
         <div class="page-hero">
           <div class="container">
@@ -422,10 +425,13 @@ if (MAINTENANCE_MODE) {
           </div>
         </div>
       </section>
+      </details>
 
       <!-- ======================================================
            PAGE: PORTFOLIO
       ====================================================== -->
+      <details class="landing-detail" id="detail-portfolio">
+        <summary><span>Lihat semua portofolio</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-portfolio">
         <div class="page-hero">
           <div class="container">
@@ -541,8 +547,8 @@ if (MAINTENANCE_MODE) {
 
               <div class="portfolio-item" data-category="new">
                 <div class="portfolio-img portfolio-img-xcarbon">
-                  <img class="portfolio-site-image" src="images/xcarbon-homepage-preview.png" alt="Beranda XCarbon Technik menampilkan produk silinder CNG dengan desain hitam dan merah" loading="lazy">
-                  <a class="portfolio-preview-panel" href="https://xcarbontechnik.com/" target="_blank" rel="noopener noreferrer" aria-label="Buka pratinjau langsung XCarbon Technik">
+                  <img class="portfolio-site-image" src="images/xcarbon-homepage-preview.png" alt="Beranda Xcarbontechnik menampilkan produk silinder CNG dengan desain hitam dan merah" loading="lazy">
+                  <a class="portfolio-preview-panel" href="https://xcarbontechnik.com/" target="_blank" rel="noopener noreferrer" aria-label="Buka pratinjau langsung Xcarbontechnik">
                     <span class="portfolio-preview-action">Buka situs <span aria-hidden="true">↗</span></span>
                   </a>
                   <div class="portfolio-overlay">
@@ -552,7 +558,7 @@ if (MAINTENANCE_MODE) {
                   </div>
                 </div>
                 <div class="portfolio-info">
-                  <h3>XCarbon Technik</h3>
+                  <h3>Xcarbontechnik</h3>
                   <p>Website produk baru untuk perusahaan engineering Jerman yang menyediakan silinder CNG komposit Type 4 yang ringan dan tersertifikasi untuk penggunaan rumah tangga serta industri komersial.</p>
                   <div class="portfolio-tags">
                     <span>Desain Web</span>
@@ -581,10 +587,13 @@ if (MAINTENANCE_MODE) {
           </div>
         </div>
       </section>
+      </details>
 
       <!-- ======================================================
           PAGE: Pricing 
       ====================================================== -->
+      <details class="landing-detail" id="detail-pricing">
+        <summary><span>Lihat harga dan paket</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-pricing">
 
         <!-- HERO -->
@@ -882,10 +891,13 @@ if (MAINTENANCE_MODE) {
           </div>
         </div>
       </section>
+      </details>
       
       <!-- ======================================================
            PAGE: FAQ
       ====================================================== -->
+      <details class="landing-detail" id="detail-faq">
+        <summary><span>Lihat semua pertanyaan</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-faq">
         <div class="page-hero">
           <div class="container">
@@ -1076,10 +1088,13 @@ if (MAINTENANCE_MODE) {
           </div>
         </div>
       </section>
+      </details>
 
       <!-- ======================================================
            PAGE: ABOUT
       ====================================================== -->
+      <details class="landing-detail" id="detail-about">
+        <summary><span>Kenali Bridgepoint</span><span aria-hidden="true">+</span></summary>
       <section class="page" id="page-about">
         <div class="page-hero">
           <div class="container">
@@ -1205,6 +1220,7 @@ if (MAINTENANCE_MODE) {
         </div>
 
       </section>
+      </details>
 
       <!-- ======================================================
            PAGE: CONTACT
@@ -1288,6 +1304,17 @@ if (MAINTENANCE_MODE) {
       </section>
 
     </main>
+    <aside class="help-widget" aria-label="Bantuan Bridgepoint">
+      <div class="help-panel" id="help-panel" hidden>
+        <div class="help-heading"><strong>Tanya Bridgepoint</strong><button type="button" class="help-close" aria-label="Tutup bantuan">?</button></div>
+        <p>Pilih pertanyaan atau cari jawaban dari informasi situs kami.</p>
+        <div class="help-messages" aria-live="polite"></div>
+        <div class="help-suggestions"></div>
+        <form class="help-form"><label class="visually-hidden" for="help-input">Pertanyaan Anda</label><input id="help-input" required placeholder="Ketik pertanyaan?"><button type="submit">Cari</button></form>
+        <a class="help-whatsapp" href="https://wa.me/6289504556187" target="_blank" rel="noopener noreferrer">Butuh jawaban pribadi? Hubungi kami di WhatsApp ?</a>
+      </div>
+      <button type="button" class="help-toggle" aria-expanded="false" aria-controls="help-panel">Ada pertanyaan?</button>
+    </aside>
     <a href="https://wa.me/6289504556187?text=Hi%20Bridgepoint%2C%20Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20web%20design." class="whatsapp-float whatsapp-float--icon-only" target="_blank" rel="noopener noreferrer">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="whatsapp-float__img">
     </a>
@@ -1302,7 +1329,7 @@ if (MAINTENANCE_MODE) {
           <div class="footer-brand">
             <a href="#home" class="logo" data-page="home">
              <div class="nav-logo-image logo-trigger">
-            <img src="./images/bridgepoint_main_og.png" alt="Bridgepoint Logo">
+            <img src="./images/bridgepoint-b-green.svg" alt="Bridgepoint Logo">
             </div>
               <span class="nav-logo-text">
               <span class="logo-text">Bridgepoint</span>
